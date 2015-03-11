@@ -18,7 +18,7 @@
 		<h1>Storaged Files:</h1>
 	    <div ng-controller="home" ng-cloak class="ng-cloak">
 	      <ul>
-	      	<li ng-repeat="file in files">{{file.filename}}</li>
+	      	<li ng-repeat="file in files"><a href="/file?name={{file.filename}}">{{file.filename}}</a></li>
 	      </ul>
 	    </div>
 	</div>
